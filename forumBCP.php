@@ -262,8 +262,6 @@
 </table>
 <br>
 <br>
-
-	</div>
 </div>
 
 <div class="card-body">
@@ -273,7 +271,8 @@
 	<a href="Add_forum_detail_BCP.php?Num_ID=<?php echo $_GET["Num_ID"];?>" ><img src="image/BAdd.png" width="40" height="30"></a>
 <br>
 <br>
-	<table class = "w3-table-all">
+<div class="table-responsive">
+<table class = "w3-table-all">
     <thead>
 
 
@@ -320,15 +319,13 @@ while($result2=mysqli_fetch_array($query2,MYSQLI_ASSOC))
 mysqli_close($conn);
 ?>
 
-</div>
-</div>
-</div>
 </tbody>
 </table>
+
 </div>
-</div>                
 </div>
 </div>
+
 <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -394,8 +391,8 @@ $(document).on('click', '.delete', function(){
      success:function(data)
      {
       Dialogify.alert("<label for='validationCustom02'>Data has been delete</label>");
-    //   window.location.href = "../project/BCP.php";    
-    location.reload();
+      window.location.href = "../project/BCP.php";    
+    // location.reload();
 
      }
     })

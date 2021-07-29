@@ -258,7 +258,7 @@
 			<td><?php echo $result["Pre_Sale"];?></td>
             <td><?php echo $result["PM_Name"];?></td>
             <td><?php echo $result["Due_Date"];?></td>
-            <td><center><?php echo '<a type="button" name="delete" id="'.$result["Num_ID"].'" class="btn  btn-xs delete"><img src="image/delete.png" width="30" height="30"></a>'?>
+            <td><center><?php echo '<a type="button" name="delete" data-name = "data" data-id="'.$result["Num_ID"].'" class="btn  btn-xs delete"><img src="image/delete.png" width="30" height="30"></a>'?>
 			</center></td>
 
         </tr>
@@ -393,8 +393,7 @@ $(document).on('click', '.delete', function(){
      success:function(data)
      {
       Dialogify.alert("<label for='validationCustom02'>Data has been delete</label>");
-    //   window.location.href = "../project/BCP.php";     
-    location.reload();
+      window.location.href = "../project/Report.php";     
     }
     })
    },
