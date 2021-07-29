@@ -316,6 +316,8 @@
 	<a href="Add_forum_detail_PM.php?Num_ID=<?php echo $_GET["Num_ID"];?>" ><img src="image/BAdd.png" width="40" height="30"></a>
 <br>
 <br>
+<div class="table-responsive">
+
 	<table class = "w3-table-all">
     <thead>
 
@@ -433,8 +435,8 @@ $(document).on('click', '.delete', function(){
      success:function(data)
      {
       Dialogify.alert("<label for='validationCustom02'>Data has been delete</label>");
-      window.location.href = "../project/PM.php";  
-    // location.reload();
+    //   window.location.href = "../project/PM.php";  
+    location.reload();
 
        }
     })

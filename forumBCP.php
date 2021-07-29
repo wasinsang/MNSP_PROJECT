@@ -391,8 +391,8 @@ $(document).on('click', '.delete', function(){
      success:function(data)
      {
       Dialogify.alert("<label for='validationCustom02'>Data has been delete</label>");
-      window.location.href = "../project/BCP.php";    
-    // location.reload();
+    //   window.location.href = "../project/BCP.php";    
+    location.reload();
 
      }
     })
